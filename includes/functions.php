@@ -49,7 +49,7 @@ function ssppod_upgrade_options( $options ) {
         'feed_pull_url'  => '',
         'feed_push_url'  => '',
         'feed_push_path' => '',
-        'feed_tags_url'  => SSPPOD_URL . 'xml/podcast-tags.xml',
+        'feed_tags_url'  => SSPPOD_URL . 'xml/template-tags.xml',
     );
 
     if ( is_array( $options ) && ! empty( $options ) ) {
