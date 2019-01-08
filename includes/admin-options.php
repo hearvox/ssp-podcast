@@ -54,7 +54,7 @@ function ssppod_help_tab() {
                         '<li>SC: https://feeds.soundcloud.com/users/soundcloud:users:19701305/sounds.rss</li>' .
                         '<li>SSP: https://web.stanford.edu/group/storytelling/rss.xml</li>' .
                         '<li>Path: /afs/ir/group/storytelling/WWW/rss.xml</li>' .
-                        '<li>Tags: https://storytelling.stanford.edu/wp-content/plugins/ssp-podcast/xml/podcast-tags.xml</li>' .
+                        '<li>Tags: ' . SSPPOD_URL . 'xml/podcast-tags.xml</li>' .
                     '</ul>',
         )
     );
