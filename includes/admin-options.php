@@ -65,7 +65,8 @@ function ssppod_help_tab() {
     $current_screen->set_help_sidebar(
         '<p><strong>' . __( 'Links:', 'ssppod' ) . '</strong></p>' .
         '<p><a href="https://storytelling.stanford.edu/category/shows/state-of-the-human/">'     . __( 'SSP SOTH',     'postscript' ) . '</a></p>' .
-        '<p><a href="https://soundcloud.com/stateofthehuman" target="_blank">' . __( 'SOTH@SoundCloud', 'ssppod' ) . '</a></p>'
+        '<p><a href="https://soundcloud.com/stateofthehuman" target="_blank">' . __( 'SOTH@SoundCloud', 'ssppod' ) . '</a></p>' .
+        '<p><a href="https://github.com/hearvox/ssp-podcast" target="_blank">' . __( 'GitHub repo', 'ssppod' ) . '</a></p>'
     );
 }
 
