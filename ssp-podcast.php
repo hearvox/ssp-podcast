@@ -44,7 +44,7 @@ if ( defined( 'SSPPOD_VERSION' ) ) {
 /* ------------------------------------------------------------------------ *
  * Constants: plugin version, name, and the path and URL to directory.
  *
- * SSPPOD_BASENAME podcast-pull/podcast-pull.php
+ * SSPPOD_BASENAME podcast-pull/ssp-podcast.php
  * SSPPOD_DIR      /path/to/wp-content/plugins/ssp-podcast/
  * SSPPOD_URL      https://example.com/wp-content/plugins/ssp-podcast/
  * ------------------------------------------------------------------------ */
