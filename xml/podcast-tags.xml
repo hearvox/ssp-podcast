@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <atom:link href="https://web.stanford.edu/group/storytelling/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>State of the Human</title>
+    <link>https://storytelling.stanford.edu</link>
+    <pubDate><!-- pubDate --></pubDate>
+    <lastBuildDate><!-- lastBuildDate --></lastBuildDate>
+    <ttl>60</ttl>
+    <language>en</language>
+    <copyright>All rights reserved</copyright>
+    <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
+    <description>State of the Human, the radio show of the Stanford Storytelling Project, shares stories that deepen our understanding of single, common human experiences—belonging, giving, lying, forgiveness—all drawn from the experiences and research of the Stanford community.</description>
+    <itunes:subtitle>State of the Human, the radio show of the Stanford Storytelling Project</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>State of the Human</itunes:name>
+      <itunes:email>storytelling@stanford.edu</itunes:email>
+    </itunes:owner>
+    <itunes:author>Stanford Storytelling Project</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://i1.sndcdn.com/avatars-000135419319-kty428-original.jpg"/>
+    <image>
+      <url>http://i1.sndcdn.com/avatars-000135419319-kty428-original.jpg</url>
+      <title>State of the Human</title>
+      <link>https://storytelling.stanford.edu</link>
+    </image>
+    <itunes:category text="Society &amp; Culture"/>
+    <!-- items -->
+  </channel>
+</rss>
