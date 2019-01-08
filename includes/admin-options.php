@@ -322,6 +322,6 @@ function ssppod_feed_push_path_callback( $args ) {
 function ssppod_feed_tags_url_callback( $args ) {
     ?>
     <input type="url" required id="ssppod-feed-tags-url" name="ssppod[feed_tags_url]" size="82" value="<?php if ( isset ( $args['value'] ) ) { echo esc_url( $args['value'] ); } ?>" pattern="https?://.+" title="Please specify https:// or http://." />
-    <p class="description"><?php _e( 'XML template file with tags that go above and below episode items', 'ssppod' ); ?> (<a href="<?php echo SSPPOD_URL; ?>includes/podcast-tags.xml"><?php _e( 'default file', 'ssppod' ); ?></a>).</p>
+    <p class="description"><?php _e( 'XML template file with tags that go above and below episode items', 'ssppod' ); ?> (<a href="<?php echo SSPPOD_URL; ?>includes/template-tags.xml"><?php _e( 'default file', 'ssppod' ); ?></a>).</p>
     <?php
 }
