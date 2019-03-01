@@ -117,7 +117,7 @@ function ssppod_settings_display() {
  * @since   0.1.0
  */
 function ssppod_upodate_feed_xml() {
-    $xml = $date_pub = $date_build = $item_count = $feed = $items = '';
+    $xml = $date_pub = $date_build = $item_count = $feed = $items = $write = '';
     $options = ssppod_get_options(); // Options array: 'ssppod'.
 
     // URLs in options (empty string if not an URL).
@@ -146,15 +146,13 @@ function ssppod_upodate_feed_xml() {
                 $items .= $item->asXML();
             }
 
-            $items = str_replace( ' (full episode)</title>', '</title>', $items); // Clean item titles.
+            $items = str_ireplace( ' (full episode)</title>', '</title>', $items); // Clean item titles.
             $feed  = str_replace( '<!-- items -->', $items, $feed); // Insert RSS items.
         }
     }
 
     // Write to file (combines: open, write, close).
     $write = file_put_contents( $feed_push_path, $feed);
-
-
 
     // Write resulting XML into textarea.
     $feed_new = file_get_contents( $feed_push_path );
@@ -163,7 +161,7 @@ function ssppod_upodate_feed_xml() {
     <?php _e( 'Number of episodes:', 'ssppod' ); ?> <?php echo $item_count; ?><br>
     <?php _e( 'Bytes written:', 'ssppod' ); ?> <?php echo $write; ?></p>
     <p><label for="ssppod-feed-xml"><strong>Updated feed XML</strong></label><br>
-    <textarea disabled="true" id="ssppod-feed-xml" name="ssppod-feed-xml" rows="12" cols="80" style="max-width: 90%;"><?php echo htmlentities( $feed_new ); ?></textarea></p><br>
+    <textarea readonly autofocus id="ssppod-feed-xml" name="ssppod-feed-xml" rows="12" cols="80" style="max-width: 90%;" onClick="this.setSelectionRange(0, this.value.length)"><?php echo htmlentities( $feed_new ); ?></textarea></p><br>
     <?php
     // echo '<pre>'; print_r( $options ); echo '</pre>';
 }
